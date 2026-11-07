@@ -75,8 +75,7 @@ portfolio/
 Não há dependências nem etapa de build. Basta clonar e abrir o arquivo no navegador:
 
 ```bash
-git clone https://github.com/arthurgarciadev/portfolio.git
-cd portfolio
+git clone https://github.com/arthurgarciadev/portifolio
 ```
 
 Depois abra o `index.html`. Se preferir um servidor local, a extensão **Live Server** do VS Code funciona bem.
