@@ -462,6 +462,31 @@ a:focus-visible {
 
 .rail { mix-blend-mode: difference; }
 
+.projetos-github {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: fit-content;
+    margin: clamp(28px, 4vw, 48px) 0 0 auto;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #c9c5bc;
+    font-size: 1rem;
+    font-family: "Raleway", system-ui, sans-serif;
+    font-weight: 500;
+    color: #4b4842;
+    text-decoration: none;
+    transition: color 0.3s var(--ease), border-color 0.3s var(--ease), gap 0.3s var(--ease);
+}
+.projetos-github:hover { color: #17171a; border-color: #17171a; gap: 14px; }
+.projetos-github svg {
+    width: 16px; height: 16px;
+    fill: none; stroke: currentColor;
+    stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;
+}
+
+
+
+/* ---------- Sobre ---------- */
 .sobre {
     position: relative;   
     z-index: 1;
@@ -470,9 +495,6 @@ a:focus-visible {
     padding: clamp(72px, 10vw, 140px) clamp(20px, 4vw, 64px)
              clamp(72px, 10vw, 140px) calc(var(--rail) + clamp(20px, 4vw, 64px));
 }
-
-/* ---------- Sobre ---------- */
-
 
 .sobre-grade {
     display: grid;
@@ -671,6 +693,9 @@ a:focus-visible {
 
 .hero-retrato { display: contents; } 
 
+.projetos { padding-bottom: clamp(40px, 5vw, 72px); }
+.sobre    { padding-top:    clamp(40px, 5vw, 72px); }
+
 @media (max-width: 900px) {
     .contato { grid-template-columns: 1fr; }
 }
@@ -826,4 +851,5 @@ a:focus-visible {
 
 @media (max-width: 400px) {
     .stack-item { width: 16px; height: 16px; }
+    .projetos-github { font-size: 12px; }
 }
